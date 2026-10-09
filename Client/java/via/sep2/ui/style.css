@@ -1,0 +1,544 @@
+.normalbutton
+{
+  -fx-background-color : #dc8018;
+  -fx-background-radius : 15;
+}
+
+.imagebutton
+{
+  -fx-background-color : #dc8018;
+  -fx-background-radius : 15;
+
+}
+
+.button:pressed:hover {
+    -fx-scale-y: 0.98;
+    -fx-scale-x: 0.98;
+}/*both hovers were taken from https://stackoverflow.com/questions/43508511/hover-and-pressed-in-javafx */
+.button:hover {
+    -fx-background-color: #383838;
+    -fx-scale-y: 1.02;
+    -fx-scale-x:1.02;
+}
+
+.leftVbox
+{
+  -fx-background-color : #dddddc;
+}
+.loginText {
+  -fx-fill: #753b3b; /* Text color for Text element */
+  -fx-font-family: "Franklin Gothic Medium"; /* Standard font */
+  -fx-font-size: 20px; /* Standard size for normal text */
+  -fx-font-weight: normal; /* No bold */
+  -fx-font-style: normal; /* No italic */
+  -fx-underline: true;
+}
+.mainPane_background
+{
+  -fx-background-color : #e1e1e1;
+}
+.logo
+{
+ -fx-background-image: url("images/logo.png");
+ -fx-background-size: contain;
+ -fx-background-radius: 5;
+ -fx-background-repeat: no-repeat;
+ -fx-background-position: center;
+}
+.shadow
+{
+
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.button_background
+
+{
+  -fx-background-color : #f3f3f3;
+  -fx-background-radius : 20;
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.table_background
+
+{
+  -fx-background-color : #f3f3f3;
+  -fx-background-radius : 20;
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.text_field
+
+{
+  -fx-background-color : #f3f3f3;
+  -fx-text-fill: black;
+  -fx-background-radius : 20;
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+
+.reservation_background
+{
+  -fx-background-color : #e8e8e8;
+}
+
+
+
+.table-view {
+
+
+    -fx-background-color: transparent;
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+
+
+}
+
+
+/*HEADER */
+
+
+.table-view .column-header{
+
+
+    -fx-background-color: transparent;    /* made transparent */
+
+
+    -fx-size: 45.0px;
+
+
+    -fx-min-height: 45.0px;
+
+
+    -fx-cursor: hand;
+
+
+}
+
+
+.table-view .column-header .label {
+
+
+    -fx-font-size: 1.083333em;
+
+
+    -fx-font-weight: bold;
+
+
+    -fx-text-fill: white;
+
+
+    -fx-alignment: center-left;
+
+
+    -fx-padding: 5.0 5.0 5.0 5.0;
+
+
+}
+
+
+.table-view .filler{
+
+
+    -fx-background-radius: 0.0 5.0 0.0 0.0;
+
+
+    -fx-background-color: transparent;    /* made transparent */
+
+
+    -fx-size: 45.0px;
+
+
+    -fx-min-height: 45.0px;
+
+
+}
+
+
+.table-view .show-hide-columns-button{
+
+
+    -fx-background-color: #dc8018;
+
+
+}
+
+
+.table-view .column-drag-header{
+
+
+      -fx-background-color: #e6ad2a;
+
+
+    -fx-cursor: h-resize;
+
+
+}
+
+
+.table-view .column-resize-line{
+
+
+    -fx-text-fill: white;
+
+
+    -fx-background-color: white;
+
+
+    -fx-fill: white;
+
+
+    -fx-border-color: white;
+
+
+    -fx-border-width: 1;
+
+
+}
+
+
+.table-view .column-header .sort-order{
+
+
+    -fx-text-fill: white;
+
+
+    -fx-fill: white;
+
+
+}
+
+
+.table-view .placeholder{
+
+
+     -fx-background-color: white;
+
+
+}
+
+
+.table-view .placeholder .label {
+
+
+    -fx-font-size: 1.1em;
+
+
+    -fx-font-weight: bold;
+
+
+    -fx-text-fill: #dc8018;
+
+
+    -fx-alignment: center;
+
+
+}
+
+
+.table-view .virtualflow{
+
+
+    -fx-background-color: white;
+
+
+}
+
+
+/* Each row in the table is a table-row-cell. Inside a table-row-cell is any
+
+
+   number of table-cell. */
+
+
+.table-row-cell {
+
+
+    -fx-background-color: transparent;
+
+
+    -fx-border-width: 0.0;
+
+
+    -fx-padding: 10.0 0.0 10.0 0.0;
+
+
+    -fx-pref-height: 45.0px;
+
+
+}
+
+
+.table-row-cell:filled:even{
+
+
+    -fx-background-color: white;
+
+
+}
+
+
+.table-row-cell:filled:odd{
+
+
+    -fx-background-color: #F6F7F8;
+
+
+}
+
+
+.table-view:row-selection .table-row-cell:filled:hover {
+
+
+    /*-fx-background-color: red;*/
+
+
+}
+
+
+.table-view:row-selection .table-row-cell:filled:hover .text{
+
+
+    /*-fx-fill: white;*/
+
+
+}
+
+
+.table-row-cell:filled:focused {
+
+
+    -fx-background-color: #e1e2e3;
+
+
+    -fx-background-insets: 0.0;
+
+
+}
+
+
+.table-row-cell:filled:focused .text{
+
+
+}
+
+
+.table-row-cell .table-column{
+
+
+    -fx-border-width: 0.0;
+
+
+    -fx-padding: 0.0 0.0 0.0 5.0;
+
+
+}
+
+
+/*TESTO DELLE CELLE */
+
+
+.table-row-cell .text{
+
+
+    -fx-font-size: 1.1em;
+
+
+    -fx-fill: #6F7B8A;
+
+
+}
+
+
+/*SCROLL BAR VERTICALE */
+
+
+.table-view .scroll-bar:vertical{
+
+
+    -fx-padding: 0.0 0.0 0.0 0.0;
+
+
+}
+
+
+/*SCROLL BAR ORIZZONTALE */
+
+
+.table-view .scroll-bar:horizontal {
+
+
+    -fx-padding: 0.0 0.0 0.0 0.0;
+
+
+}
+
+/* I ADDED THIS */
+
+.table-view .column-header-background {
+
+
+  -fx-background-radius: 5.0 5.0 0.0 0.0;
+
+
+    -fx-background-color: #dc8018;
+
+
+}
+
+* {
+	-fx-primary-color: #dc8018;
+	-fx-secondary-color: #e6ad2a;
+	-fx-light-grey-color: #d1d1d1;
+
+	-fx-focus-color: -fx-secondary-color;
+}
+
+.date-picker .arrow-button {
+	-fx-background-color: -fx-primary-color;
+	-fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+	-fx-background-color: -fx-secondary-color;
+}
+.date-picker .arrow-button .arrow {
+	-fx-background-color: white;
+}
+.date-picker .cell {
+	-fx-background-color: white;
+}
+.date-picker .cell:hover {
+	-fx-background-color: -fx-light-grey-color;
+}
+.date-picker .cell:focused {
+	-fx-background-color: -fx-light-grey-color;
+}
+.date-picker .selected {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: white;
+}
+.date-picker .selected:focused {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: white;
+}
+.date-picker-popup  {
+	-fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+	-fx-background-color: -fx-primary-color;
+}
+.date-picker-popup .month-year-pane .label {
+	-fx-text-fill: white;
+}
+.date-picker-popup .week-number-cell {
+	-fx-text-fill: -fx-secondary-color;
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+	-fx-background-color: white;
+}
+
+.search_button
+{
+-fx-background-image: url("images/search.png");
+  -fx-background-radius : 15;
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+  -fx-background-color : #f3f3f3;
+}
+
+.login_button
+{
+  -fx-background-image: url("images/login.png");
+  -fx-background-color : #f3f3f3;
+  -fx-background-radius : 15;
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.addNewUser_button
+{
+  -fx-background-image: url("images/addNewUser64px.png");
+
+  -fx-background-color : #f3f3f3;
+  -fx-background-radius : 5;
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.updatePassword_button
+{
+  -fx-background-image: url("images/updatedPassword.png");
+  -fx-background-color : #f3f3f3;
+
+  -fx-background-radius : 10;
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.familyroom_button
+{
+-fx-background-image: url("images_reservation/Family-Room.png");
+
+  -fx-background-radius : 5;
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.kingsized_button
+{
+-fx-background-image: url("images_reservation/Kingsized-Bedroom.png");
+  -fx-background-radius : 5;
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.smallroom_button
+{
+-fx-background-image: url("images_reservation/Small-Room.png");
+
+  -fx-background-radius : 5;
+  -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+/* ComboBox text field (the input area) */
+.combo-box .text-field {
+    -fx-text-fill: black; /* White text color */
+    -fx-font-size: 16px; /* Larger font size, adjust as needed */
+    -fx-prompt-text-fill: black; /* White prompt text */
+}
+
+/* ComboBox list cells (dropdown items) */
+.combo-box .list-cell {
+    -fx-text-fill: black; /* White text color for dropdown items */
+    -fx-font-size: 16px; /* Larger font size for dropdown items */
+    -fx-background-color: #585858; /* Optional: background color for dropdown items */
+}
+
+/* Optional: Hover effect for dropdown items */
+.combo-box .list-cell:hover {
+    -fx-background-color: white; /* Matches your primary color */
+}
+
+/* Optional: Selected item in dropdown */
+.combo-box .list-cell:selected {
+    -fx-background-color: white; /* Matches your secondary color */
+    -fx-text-fill: black; /* Ensure text remains white when selected */
+}
+.successLabel {
+  -fx-text-fill: #388e3c;      /* Green */
+  -fx-font-weight: bold;
+  -fx-padding: 6px 10px;
+}
+.messageNotificationLabel {
+  -fx-font-size: 16px;
+  -fx-font-family: "Segoe UI", sans-serif;
+  -fx-padding: 6px 10px;
+  -fx-alignment: center;
+}
+
+.notificationLabel {
+  -fx-text-fill: #1976d2;      /* Blue */
+}
+.warningLabel {
+   -fx-text-fill: #fb8c00
+}
+.errorLabel {
+  -fx-text-fill: #b71c1c;
+}
+/* References:
+/* https://forums.oracle.com/ords/apexds/post/round-corner-in-tableview-header-3224
+/* https://dx.dragan.ba/javafx-datepicker-custom-css/
+

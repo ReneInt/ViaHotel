@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" styleClass="mainPane_background" stylesheets="" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="via.sep2.ui.employees.AddEmployeeController">
+    <children>
+        <HBox layoutX="467.0" layoutY="602.0" prefHeight="87.0" prefWidth="268.0" styleClass="button_background">
+            <children>
+                <ImageView fitHeight="77.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/addNewUser.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="8.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </ImageView>
+                <Button fx:id="buttonRegister" mnemonicParsing="false" onAction="#onRegister" prefHeight="83.0" prefWidth="154.0" styleClass="normalbutton" text="Add a new&#10;Employee" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Franklin Gothic Medium" size="25.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <Text fill="#878787" layoutX="398.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font name="Cambria Bold" size="30.0" />
+            </font>
+        </Text>
+        <Text fill="#878787" layoutX="398.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font name="Cambria" size="30.0" />
+            </font>
+        </Text>
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="439.0" layoutY="507.0" prefHeight="87.0" prefWidth="312.0" text="Label for stuff" textFill="#6b0000">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font>
+      </Label>
+      <HBox layoutX="467.0" layoutY="722.0" prefHeight="87.0" prefWidth="268.0" styleClass="button_background">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="8.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onManage" prefHeight="83.0" prefWidth="154.0" styleClass="normalbutton" text="Manage&#10;Employees" textAlignment="CENTER" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Text fill="#898989" layoutX="433.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add">
+         <font>
+            <Font name="Cambria Bold" size="55.0" />
+         </font>
+      </Text>
+      <Text fill="#898989" layoutX="535.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee">
+         <font>
+            <Font name="Cambria" size="55.0" />
+         </font>
+      </Text>
+      <TextField fx:id="firstNameInput" layoutX="239.0" layoutY="295.0" prefHeight="64.0" prefWidth="217.0" promptText="Type First Name" styleClass="text_field">
+         <font>
+            <Font name="Franklin Gothic Medium" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lastNameInput" layoutX="492.0" layoutY="295.0" prefHeight="64.0" prefWidth="217.0" promptText="Type Last Name" styleClass="text_field">
+         <font>
+            <Font name="Franklin Gothic Medium" size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordInput" layoutX="492.0" layoutY="432.0" prefHeight="64.0" prefWidth="217.0" promptText="Type password" styleClass="text_field" stylesheets="">
+         <font>
+            <Font name="Franklin Gothic Medium" size="17.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="repeatPasswordInput" layoutX="768.0" layoutY="432.0" prefHeight="64.0" prefWidth="217.0" promptText="Repeat password" styleClass="text_field">
+         <font>
+            <Font name="Franklin Gothic Medium" size="17.0" />
+         </font>
+      </PasswordField>
+      <Text fill="#898989" layoutX="835.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position" wrappingWidth="93.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="25.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="personType" layoutX="773.0" layoutY="295.0" prefHeight="64.0" prefWidth="217.0" />
+      <TextField fx:id="emailInput" layoutX="239.0" layoutY="432.0" prefHeight="64.0" prefWidth="217.0" promptText="Type email" styleClass="text_field">
+         <font>
+            <Font name="Franklin Gothic Medium" size="18.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
